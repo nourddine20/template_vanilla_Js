@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Carte - Create New Product</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/new_product.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+</head>
+<body>
+    
+    <header>
+
+        <div class="container">
+
+            <div class="header_content">
+                <div class="logo">
+                    <h1><i class="fas fa-store fa-lg"></i><a href="index.html">Shopping Carte </a></h1>  
+                 </div>
+         
+                 <ul id="login" class="login">
+                     <li><a href="login.html"><i class="fas fa-sign-in-alt fa-lg"></i> Sign In</a></li>
+                     <li><a href="register.html"><i class="fas fa-user-plus fa-lg"></i> Sign Up</a></li>
+                 </ul>
+
+                 <ul id="user">
+
+                    <li class="profile"><i class="fas fa-user-circle fa-lg"></i><a href="profile.html" id="user_info"></a>
+                    </li>
+
+                    <li class="favorite"> 
+                        
+                        <a href="favorite_products.html">
+                        <i class="fas fa-bookmark"></i>
+                        Favorite
+                         </a>
+
+                    </li>
+
+                    <li class="mycart">
+                       
+                            <a id="mycart_icon" href="#">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                My Cart
+                                <span>0</span>
+                            </a>
+                            
+                        <ul class="dropdown_mycart">
+                           
+                            <div class="dropdown_mycart_list" style="overflow-y:auto;
+                              max-height:125px;">
+                                
+                            </div>
+                            
+                           <button  id="view_all_btn">view all products</button>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="log_out"><i class="fas fa-sign-out-alt fa-lg"></i> Log Out</a>
+                    </li>
+                    
+                  
+                </ul>
+            </div>
+          
+        </div>
+       
+    </header>
+   
+   
+    <section class="box_form">
+        <h2>Create New Product</h2>
+        <form class="add_product_form" id="create_form">
+            <div class="two_face_form">
+                <div class="form_info">
+                    <input type="text" placeholder="Product Name..." id="product_name">
+                    <input type="text" placeholder="decription..." id="product_description">
+                    <select name="" id="product_size">
+                        <option value="" hidden >Choose Size</option>
+                        <option value="Small">Small</option>
+                        <option value="Meduim">Meduim</option>
+                        <option value="Large">Large</option>
+                    </select>
+                    <input type="text" placeholder="Time delevry (example: 1 day )" id="product_delevery">
+                </div>
+                <div class="form_image">
+                    <img type="image" src="" id="box_image" />
+                    <input type="file" id="url_image" accept=".jpg, .jpeg, .png" >
+                </div>
+            </div>
+             <div class="btn_add_product">
+                <input type="submit" value="OK" id="btn_add_product">
+             </div>
+          
+        </form> 
+    </section>
+
+    <script src="js/general.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/create_product.js"></script>
+    <script src="js/changedir.js"></script>
+</body>
+</html>

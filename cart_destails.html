@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Carte - My Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart_details.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.css">
+</head>
+<body>
+    
+     <header>
+
+        <div class="container">
+
+            <div class="header_content">
+                <div class="logo">
+                    <h1><i class="fas fa-store fa-lg"></i><a href="index.html">Shopping Carte</a></h1>  
+                 </div>
+         
+                 <ul id="login" class="login">
+                     <li><a href="login.html"><i class="fas fa-sign-in-alt fa-lg"></i> Sign In</a></li>
+                     <li><a href="register.html"><i class="fas fa-user-plus fa-lg"></i> Sign Up</a></li>
+                 </ul>
+
+                 <ul id="user">
+
+                    <li class="profile"><i class="fas fa-user-circle fa-lg"></i><a href="profile.html" id="user_info"></a>
+                    </li>
+                    <li class="mycart">
+                       
+                            <a id="mycart_icon">
+                                <i class="fas fa-shopping-cart fa-lg"></i>
+                                My Cart
+                                <span>0</span>
+                            </a>
+                            
+                        <ul class="dropdown_mycart">
+                           
+                            <div class="dropdown_mycart_list" style="overflow-y:auto;
+                              max-height:125px;">
+                                
+                            </div>
+                            
+                           <button  id="view_all_btn">view all products</button>
+                        </ul>
+                    </li>
+                    <li>
+                        <a id="log_out"><i class="fas fa-sign-out-alt fa-lg"></i> Log Out</a>
+                    </li>
+                    
+                  
+                </ul>
+            </div>
+          
+        </div>
+       
+    </header>
+
+    <section class="list_product">
+        
+        <div class="container">
+            <div class="box_product_details">
+              
+             
+               
+             
+             
+                    
+             </div>
+
+          
+        </div>
+
+    </section>
+    
+    <script src="js/general.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cart_details.js"></script>
+    <script src="js/changedir.js"></script>
+</body>
+</html>

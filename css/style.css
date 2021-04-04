@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+header{
+  
+    background-color: rgb(77, 75, 75);
+    width: 100%;
+    z-index: 1;
+   position: fixed;
+    
+}
+
+.header_content{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    height:12vh;
+  
+}
+
+.header_content > ul{
+    flex: 0.8;
+    display: flex;
+    justify-content: flex-end;
+    padding:5px;
+    align-self: flex-end;
+  
+}
+
+.header_content > ul li{
+    list-style: none;
+    padding:2%;
+    font-weight: bold;
+    margin-right:5px;
+   background-color: transparent;
+   color: rgb(255, 255, 255);
+}
+.header_content > ul li.language{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.header_content > ul li.language:hover{
+    color:rgb(255, 217, 168);
+}
+.header_content > ul li a{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(255, 217, 168);
+   cursor: pointer;
+
+}
+
+#user{
+   display: none;
+}
+
+#mycart_icon{
+
+    position: relative;
+    display: flex;
+    
+
+}
+#mycart_icon span{
+    position: absolute;
+    background-color: rgb(122, 122, 122);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: -40%;
+    left:15%;
+    font-size: 14px;
+    color: orange;
+    text-align: center;
+    line-height: 18px;
+   
+}
+
+.header_content a{
+    color: rgb(255, 209, 149);
+   
+    
+}
+
+.header_content > ul li i{
+    color: rgb(255, 209, 149);
+   
+}
+
+.header_content i{
+    margin-right:5px;
+    cursor: pointer;
+}
+
+.header_content .logo i{
+   
+    letter-spacing: 2px;
+    color: rgb(255, 209, 149);
+    
+}
+
+.header_content #user .mycart{
+    position: relative;
+}
+
+
+
+.header_content #user .mycart .dropdown_mycart{
+    position: absolute;
+    background-color: rgb(105, 105, 105);
+    top:50px;
+    left:-25px;
+    width:175%;
+    border: 1px solid rgb(250, 207, 151);
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+     padding-bottom:50%;
+    padding-left: 5%;
+    display: none;
+  
+}
+
+.header_content #user .mycart .dropdown_mycart li{
+    width:80%;
+    color: white;
+    padding:2%;
+    margin-bottom:5px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_content #user .mycart .dropdown_mycart li span{
+    display: block;
+    margin-left: 10px;
+    width:23px;
+    height: 23px;
+    line-height: 20px;
+    border-radius: 50%;
+    background-color:gray;
+    text-align: center;
+    color: white;
+    border:2px solid white;
+    
+   
+}
+.header_content #user .mycart .dropdown_mycart li:hover{
+   
+    color: rgb(250, 207, 151);
+    background-color: dimgray;
+    cursor: pointer;
+    
+}
+
+
+
+.header_content #user .mycart .dropdown_mycart button{
+
+  
+    color: rgb(77, 73, 73);
+    padding:5% 10%;
+    border-radius: 5px;
+    border: 2px solid rgb(250, 207, 151);
+    background-color: dimgray;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    margin-top:5px;
+    font-weight: bold;
+    position: absolute;
+     bottom:5%;
+     left:10%;
+    
+}
+
+.header_content #user .mycart .dropdown_mycart button:hover{
+    color: rgb(121, 119, 117);
+    background-color:rgb(250, 207, 151);
+}
+
+
+/********     list  product  part section  **********/
+
+.list_product{
+    padding-top:6%;
+}
+
+.list_product .container > div{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.product_item{
+   
+    width: 45%;
+    display: flex;
+    margin: 2%;
+    border-radius: 5px;
+    border: 1px solid rgb(110, 110, 93,0.25);
+    transform: scale(0.98,0.98);
+    transition: transform 0.25s ease-in;
+    height:250px;
+}
+
+.product_item .title_product h3 a{
+    cursor: pointer;
+    color:#333;
+    
+}
+.product_item:hover{
+    transform: scale(1,1);
+}
+.item_info{
+    padding: 3%;
+    width: 80%;
+    position: relative;
+  
+}
+
+.item_info .boxing_product{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: bold;
+    
+}
+
+.item_info .boxing_product span{
+    margin:5px;
+    color: rgb(82, 79, 79);
+}
+
+
+.item_info .favorite{
+position: absolute;
+top:7%;
+right:7%;
+color: rgb(225, 225, 225);
+background-color: white;
+cursor: pointer;
+}
+
+.item_info #remove:hover{
+    color: red;
+}
+
+.item_info p{
+    margin:5% auto;
+    color: dimgray;
+}
+.product_image{
+    width:50%;
+    border-radius: 5px;
+    height: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/* 
+.item_info .addtocarte{
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 3%;
+    cursor: pointer;
+    color:rgb(128, 127, 127) ;
+    border-radius: 2px;
+    border: none;
+     opacity: 1;
+    
+} */
+
+
+.item_info .title_product .Review i{
+    font-size:12px;
+color: rgb(173, 173, 173);
+}
+
+
+/************** search products by *******************/
+
+.groupe_filter{
+   
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.groupe_filter .search{
+    padding:10px;
+    width:70%;
+    
+}
+
+.groupe_filter .search input{
+    padding: 10px;
+    border-radius: 5px;
+    font-size:18px;
+    border: 1px solid rgb(77, 75, 75,0.5);
+    outline: none;
+    width:95%;
+}
+
+
+/**********  filter products by size and delevery  **********/
+
+.multi_filters{
+
+width:30%;
+padding:10px;
+display: flex;
+justify-content: space-between;
+color: #333;
+
+}
+
+.multi_filters select{
+    padding: 2% 5%;
+    border-radius: 5px;
+    border: 1px solid rgb(77, 75, 75,0.5);
+    outline: none;
+    font-size: 15px;
+   
+}
+
+.multi_filters select option{
+    font-size: 15px;
+    padding:10%;
+
+}
+/************* btn or icon of create new product ***********/
+.new_product{
+
+    text-decoration: none;
+    color:rgb(240, 232, 128);
+    background-color: rgb(77, 75, 75);
+    position: fixed;
+    bottom:10%;
+    right:5%;
+    padding:18px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/******** icons method bottun
+*/
+.icons_method_home{
+
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 3%;
+    cursor: pointer;
+    color:rgb(128, 127, 127) ;
+    border-radius: 2px;
+    border: none;
+    opacity: 1;
+    display: flex;
+    justify-content:flex-end;
+    width:50%;
+   
+ }
+ .icons_method_home i:hover{
+    opacity: 0.8;
+    color: rgb(250, 184, 61);
+    
+}
+
+ .icons_method_home i{
+     color: grey;
+     cursor: pointer;
+     margin:5%;
+ }
+ 
+ .icons_method_home i:hover{
+     color: rgb(250, 184, 61);
+ }

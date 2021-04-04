@@ -1,0 +1,113 @@
+.profile_page{
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   box-shadow:0px 0px 50px 0px rgb(43, 41, 39,0.5);
+   border-radius: 10px;
+    width:60%;
+    padding:2%;
+    background-color: rgb(255, 255, 255);
+}
+
+.profile_image{
+   
+    flex: 0.6;
+}
+
+.two_face_profile{
+  
+    display: flex;
+    
+    
+}
+.profile_page .two_face_profile .profile_image h2{
+   
+   text-align: center;
+   height:30px;
+   line-height: 50px;
+   color: #333;
+   font-size:25px;
+  
+}
+
+
+.profile_page .two_face_profile .profile_info{
+  
+  
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+    width: 50%;
+    padding:5%;
+  
+}
+
+.profile_page .two_face_profile .profile_info .item_info{
+  display: flex;
+
+ }
+
+.profile_page .two_face_profile .profile_info span{
+    font-size:20px;
+    color: #333;
+    margin-left:5%;
+    line-height:0.75;
+}
+.profile_page .two_face_profile .profile_image{
+   
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    padding: 2%;
+  
+}
+
+.profile_page .two_face_profile .profile_image img{
+    width:100%;
+    border-radius: 50%;
+     height:250px; 
+     background-size: cover;
+     background-repeat: no-repeat;
+    border: 1px solid rgb(206, 206, 206);
+    
+}
+
+
+.products_info{
+    
+    flex:0.4;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #4D4B4B;
+    border-radius:10px;
+}
+
+.products_info .item_info{
+    width:100%;
+}
+
+.products_info .item_info *{
+    margin:5px;
+    color: white;
+}
+.profile_info .item_info i{
+    color: #4D4B4B;
+}
+button,form input[type="submit"]{
+    background-color: rgb(218, 164, 93);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    padding:10px 25px;
+    cursor: pointer;
+    border: none;
+    margin-left: 45%;
+    font-size:18px;
+    font-family: monospace;
+    outline-color: rgb(218, 164, 93);
+
+}
